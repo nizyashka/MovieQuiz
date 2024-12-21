@@ -69,6 +69,9 @@
                                                         <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="noButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iEG-HC-dsh"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixb-0Y-61B" userLabel="Yes button">
                                                 <rect key="frame" x="197" y="0.0" width="177" height="60"/>
@@ -86,6 +89,9 @@
                                                         <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="yesButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Buh-or-lmf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -107,6 +113,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="Qhp-fC-PIz" id="Kcg-CO-mkZ"/>
                         <outlet property="indexLabel" destination="p1K-Mw-gku" id="kRd-Qs-w22"/>
                         <outlet property="noButton" destination="Z4Z-Py-tK2" id="BID-2T-qWi"/>
                         <outlet property="questionLabel" destination="4X4-dE-9VN" id="xP2-zm-jEy"/>
