@@ -13,7 +13,7 @@ protocol AlertPresenterProtocol {
     func showAlert(model: AlertModel)
 }
 
-class AlertPresenter: AlertPresenterProtocol {
+final class AlertPresenter: AlertPresenterProtocol {
     var alert: UIAlertController?
     weak var delegate: UIViewController?
     
