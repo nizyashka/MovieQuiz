@@ -31,6 +31,14 @@ final class AlertPresenter: AlertPresenterProtocol {
         
         guard let alert = self.alert else { return }
         alert.addAction(action)
+        switch alert.title {
+        case "Этот раунд окончен!":
+            alert.view.accessibilityIdentifier = "gameResultAlert"
+        case "Ошибка":
+            alert.view.accessibilityIdentifier = "errorAlert"
+        default:
+            alert.view.accessibilityIdentifier = "alert"
+        }
         
         guard let delegate = self.delegate else { return }
         delegate.present(alert, animated: true, completion: nil)
