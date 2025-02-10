@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0618CB1A2D5906C80090CAD4 /* MovieQuizPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0618CB192D5906C80090CAD4 /* MovieQuizPresenter.swift */; };
 		06382D072D3FE5A7008136E4 /* StatisticServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06382D062D3FE5A7008136E4 /* StatisticServiceProtocol.swift */; };
 		06382D0B2D3FE90E008136E4 /* GameResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06382D0A2D3FE90E008136E4 /* GameResultModel.swift */; };
 		06382D0D2D3FEE62008136E4 /* StatisticService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06382D0C2D3FEE62008136E4 /* StatisticService.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0618CB192D5906C80090CAD4 /* MovieQuizPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieQuizPresenter.swift; sourceTree = "<group>"; };
 		06382D062D3FE5A7008136E4 /* StatisticServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticServiceProtocol.swift; sourceTree = "<group>"; };
 		06382D0A2D3FE90E008136E4 /* GameResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultModel.swift; sourceTree = "<group>"; };
 		06382D0C2D3FEE62008136E4 /* StatisticService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticService.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				AD1ABAB52831907B00B3E448 /* MovieQuizViewController.swift */,
 				AD1ABAB72831907B00B3E448 /* Main.storyboard */,
 				06FCA17F2D37DCDC0046974D /* AlertPresenter.swift */,
+				0618CB192D5906C80090CAD4 /* MovieQuizPresenter.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				06FCA1742D3571CB0046974D /* QuizStepViewModel.swift in Sources */,
 				06FCA1782D3571ED0046974D /* QuizQuestion.swift in Sources */,
 				06382D072D3FE5A7008136E4 /* StatisticServiceProtocol.swift in Sources */,
+				0618CB1A2D5906C80090CAD4 /* MovieQuizPresenter.swift in Sources */,
 				06382D0B2D3FE90E008136E4 /* GameResultModel.swift in Sources */,
 				06FCA1722D356F990046974D /* QuestionFactory.swift in Sources */,
 				AD77F5742857F8810062FB14 /* Date+Extensions.swift in Sources */,
