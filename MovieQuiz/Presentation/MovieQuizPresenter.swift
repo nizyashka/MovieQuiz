@@ -131,9 +131,9 @@ final class MovieQuizPresenter: QuestionFactoryDelegate {
         let message =
         """
         Ваш результат: \(correctAnswers)/\(questionsAmount)
-        \nКоличество сыгранных квизов: \(statisticService.gamesCount)
-        \nРекорд: \(statisticService.bestGame.correct)/\(questionsAmount) \(statisticService.bestGame.date.dateTimeString)
-        \nСредняя точность: \(String(format: "%.2f", statisticService.totalAccuracy))%
+        Количество сыгранных квизов: \(statisticService.gamesCount)
+        Рекорд: \(statisticService.bestGame.correct)/\(questionsAmount) (\(statisticService.bestGame.date.dateTimeString))
+        Средняя точность: \(String(format: "%.2f", statisticService.totalAccuracy))%
         """
         
         return message
