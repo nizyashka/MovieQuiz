@@ -13,7 +13,6 @@ protocol MovieQuizViewControllerProtocol: AnyObject {
 }
 
 final class MovieQuizViewController: UIViewController, MovieQuizViewControllerProtocol {
-    
     @IBOutlet private weak var topLeadingLabel: UILabel!
     @IBOutlet private weak var indexLabel: UILabel!
     @IBOutlet private weak var imageView: UIImageView!
@@ -24,8 +23,6 @@ final class MovieQuizViewController: UIViewController, MovieQuizViewControllerPr
     
     private var presenter: MovieQuizPresenter!
     private var alertPresenter: AlertPresenterProtocol?
-    
-    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,8 +39,6 @@ final class MovieQuizViewController: UIViewController, MovieQuizViewControllerPr
         imageView.layer.cornerRadius = 20
     }
     
-    // MARK: - Actions
-    
     @IBAction private func yesButtonClicked(_ sender: Any) {
         presenter.yesButtonClicked()
         noButton.isEnabled = false
@@ -55,8 +50,6 @@ final class MovieQuizViewController: UIViewController, MovieQuizViewControllerPr
         noButton.isEnabled = false
         yesButton.isEnabled = false
     }
-    
-    // MARK: - Private functions
     
     func show(quiz result: QuizResultsViewModel) {
         alertPresenter = AlertPresenter(delegate: self)

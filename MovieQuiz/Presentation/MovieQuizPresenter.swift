@@ -1,11 +1,3 @@
-//
-//  MovieQuizPresenter.swift
-//  MovieQuiz
-//
-//  Created by Алексей Непряхин on 09.02.2025.
-//
-
-import Foundation
 import UIKit
 
 final class MovieQuizPresenter: QuestionFactoryDelegate {
@@ -28,8 +20,6 @@ final class MovieQuizPresenter: QuestionFactoryDelegate {
         viewController.showLoadingIndicator()
     }
     
-    // MARK: - QuestionFactoryDelegate
-    
     func didLoadDataFromServer() {
         viewController?.hideLoadingIndicator()
         questionFactory?.requestNextQuestion()
@@ -50,8 +40,6 @@ final class MovieQuizPresenter: QuestionFactoryDelegate {
         }
     }
     
-    // MARK: - currentQuestionIndex
-    
     func isLastQuestion() -> Bool {
         currentQuestionIndex == questionsAmount - 1
     }
@@ -64,8 +52,6 @@ final class MovieQuizPresenter: QuestionFactoryDelegate {
         currentQuestionIndex += 1
     }
     
-    // MARK: - Buttons
-    
     func yesButtonClicked() {
         didAnswer(isYes: true)
     }
@@ -73,8 +59,6 @@ final class MovieQuizPresenter: QuestionFactoryDelegate {
     func noButtonClicked() {
         didAnswer(isYes: false)
     }
-    
-    // MARK: - Private functions
     
     func convert(model: QuizQuestion) -> QuizStepViewModel {
         QuizStepViewModel(

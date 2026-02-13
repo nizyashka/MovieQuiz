@@ -1,10 +1,3 @@
-//
-//  StatisticService.swift
-//  MovieQuiz
-//
-//  Created by Алексей Непряхин on 21.01.2025.
-//
-
 import Foundation
 
 final class StatisticService: StatisticServiceProtocol {
@@ -82,6 +75,4 @@ final class StatisticService: StatisticServiceProtocol {
             bestGame = lastGame
         }
     }
-    
-    
 }
