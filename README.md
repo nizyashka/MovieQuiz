@@ -13,6 +13,7 @@ MovieQuiz is an iOS quiz application built with UIKit and Storyboard. It challen
 ## 🛠 Tech Stack
 **Language:** Swift<br>
 **UI:** UIKit + Storyboard<br>
+**Architecture:** MVC<br>
 **Networking:** REST API (IMDb)<br>
 **Testing:** Unit Tests, UI Tests<br>
 **Design:** Figma<br>
